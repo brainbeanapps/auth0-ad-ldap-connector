@@ -13,11 +13,4 @@ RUN cd /opt/auth0-connector && \
   sed -i 's/https:\/\/github.com\/auth0\/cookie-sessions\/tarball\/master/https:\/\/github.com\/auth0\/cookie-sessions\/tarball\/a192c158c8f1b40e4f248cb3242171869cbb48d9/' package.json && \
   npm install
 
-ENV PROVISIONING_TICKET=
-ENV LDAP_URL=
-ENV LDAP_BASE=
-ENV LDAP_BIND_USER=
-ENV LDAP_BIND_PASSWORD=
-ENV LDAP_BIND_CREDENTIALS=
-
 ENTRYPOINT [ "node", "/opt/auth0-connector/server.js" ]
