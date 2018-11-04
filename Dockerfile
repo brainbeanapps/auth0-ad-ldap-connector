@@ -1,6 +1,6 @@
 FROM node:8-alpine
 
-ARG VERSION=v4.1.2
+ARG VERSION=v4.1.5
 
 WORKDIR /opt/auth0-connector
 
